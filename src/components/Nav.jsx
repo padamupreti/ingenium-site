@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa"
 
 function Nav() {
     const [openMenu, setOpenMenu] = useState(false)
+    const toggleMenu = () => setOpenMenu(!openMenu)
 
     return (
         <>
@@ -12,26 +13,46 @@ function Nav() {
                     openMenu ? "translate-y-16" : "-translate-y-full"
                 } flex flex-col space-y-2 bg-gray-950/95 text-white absolute z-10 top-0 left-0 w-full transition-transform duration-300 ease-in-out`}
             >
-                <a href="#about" className="py-2 hover:text-green-400/90">
+                <a
+                    href="#about"
+                    className="py-2 hover:text-green-400/90"
+                    onClick={toggleMenu}
+                >
                     About
                 </a>
-                <a href="#events" className="py-2 hover:text-green-400/90">
+                <a
+                    href="#events"
+                    className="py-2 hover:text-green-400/90"
+                    onClick={toggleMenu}
+                >
                     Events
                 </a>
-                <a href="#sponsors" className="py-2 hover:text-green-400/90">
+                <a
+                    href="#sponsors"
+                    className="py-2 hover:text-green-400/90"
+                    onClick={toggleMenu}
+                >
                     Sponsors
                 </a>
-                <a href="#contact" className="py-2 hover:text-green-400/90">
+                <a
+                    href="#contact"
+                    className="py-2 hover:text-green-400/90"
+                    onClick={toggleMenu}
+                >
                     Contact
                 </a>
-                <a href="#faq" className="py-2 hover:text-green-400/90">
+                <a
+                    href="#faq"
+                    className="py-2 hover:text-green-400/90"
+                    onClick={toggleMenu}
+                >
                     FAQ
                 </a>
             </nav>
             <nav className="h-16 px-4 border-b border-b-gray-700 bg-gray-950/95 text-white flex items-center justify-center md:justify-between relative z-20">
                 <button
                     className="text-xl cursor-pointer w-1/12 md:hidden"
-                    onClick={() => setOpenMenu(!openMenu)}
+                    onClick={toggleMenu}
                 >
                     {openMenu ? <FaX /> : <FaBars />}
                 </button>

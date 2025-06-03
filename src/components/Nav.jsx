@@ -50,6 +50,8 @@ function Nav() {
                 </a>
             </nav>
             <nav className="h-16 px-4 border-b border-b-gray-700 bg-gray-950/95 text-white flex items-center justify-center md:justify-between relative z-20">
+                <div className="absolute -z-10 h-12 w-12 rounded-full bg-green-200/90 blur-2xl pointer-events-none top-1 left-2"></div>
+                <div className="absolute -z-10 h-12 w-12 rounded-full bg-green-400/80 blur-2xl pointer-events-none top-1 right-1/3 md:right-2/3"></div>
                 <button
                     className="text-xl cursor-pointer w-1/12 md:hidden"
                     onClick={toggleMenu}

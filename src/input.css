@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-xs: 24rem;
+}
+
 .text-outline {
     text-shadow: 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }

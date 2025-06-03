@@ -1,6 +1,6 @@
 function HeroAction() {
     return (
-        <div className="py-8 md:py-16 flex flex-col space-y-1 md:space-y-2 lg:space-y-3 relative z-0">
+        <div className="py-8 md:py-18 lg:py-25 flex flex-col space-y-1 md:space-y-2 lg:space-y-3 relative z-0">
             <div className="h-36 w-36 md:h-40 md:w-40 rounded-full bg-green-300/10 blur-xl absolute -z-10 pointer-events-none -top-10 sm:top-0 -left-20"></div>
             <div className="h-36 w-36 md:h-40 md:w-40 rounded-full bg-green-400/10 blur-xl absolute -z-10 pointer-events-none -bottom-10 sm:bottom-0 -right-10 sm:-right-20 md:-right-35"></div>
             <span className="font-extrabold text-5xl xs:text-6xl lg:text-7xl italic">

@@ -1,7 +1,7 @@
 function TimerIngenium() {
     return (
         <div className="relative">
-            <span className="absolute -z-20 text-gray-950 text-outline text-4xl sm:text-5xl md:text-7xl bottom-0 right-0 translate-y-1/2">
+            <span className="absolute -z-20 text-gray-950 text-outline text-4xl sm:text-5xl md:text-7xl -translate-y-1/2">
                 July 02
             </span>
             <div className="flex items-center space-x-5 bg-slate-100/10 backdrop-blur-xs px-2 sm:px-4 py-1 sm:py-2 border border-white/10 rounded-xl relative">

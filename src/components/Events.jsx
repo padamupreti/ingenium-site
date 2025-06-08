@@ -86,8 +86,8 @@ function Events() {
     ]
 
     return (
-        <section id="events" className="mt-8 md:mt-10 pb-10">
-            <h2 className="text-green-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
+        <section id="events" className="mt-8 md:mt-10">
+            <h2 className="text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
                 Events
             </h2>
             <div className="mt-4 flex flex-col gap-8">

@@ -7,7 +7,7 @@ function About() {
             className="mt-4 flex flex-col gap-8 md:flex-row items-center"
         >
             <div className="md:w-1/2">
-                <h2 className="text-green-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
+                <h2 className="text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
                     About
                 </h2>
                 <p className="mt-4 text-justify">

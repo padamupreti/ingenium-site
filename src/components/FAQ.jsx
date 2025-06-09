@@ -45,7 +45,7 @@ function FAQ() {
         },
     ]
     return (
-        <section id="faq" className="mt-8 md:mt-10 pb-10">
+        <section id="faq" className="mt-8 md:mt-10">
             <h2 className="text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
                 FAQ
             </h2>

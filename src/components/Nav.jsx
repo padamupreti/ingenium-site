@@ -28,18 +28,25 @@ function Nav() {
                     Events
                 </a>
                 <a
-                    href="#contact"
-                    className="py-2 hover:text-teal-400/90"
-                    onClick={toggleMenu}
-                >
-                    Contact
-                </a>
-                <a
                     href="#faq"
                     className="py-2 hover:text-teal-400/90"
                     onClick={toggleMenu}
                 >
                     FAQ
+                </a>
+                <a
+                    href="#org-com"
+                    className="py-2 hover:text-teal-400/90"
+                    onClick={toggleMenu}
+                >
+                    Organizing Committee
+                </a>
+                <a
+                    href="#contact"
+                    className="py-2 hover:text-teal-400/90"
+                    onClick={toggleMenu}
+                >
+                    Contact & Socials
                 </a>
             </nav>
             <nav className="h-16 px-4 border-b border-b-gray-700 bg-gray-950/95 text-white flex items-center justify-center md:justify-between relative z-20">
@@ -64,11 +71,14 @@ function Nav() {
                     <a href="#events" className="py-2 hover:text-teal-400/90">
                         Events
                     </a>
-                    <a href="#contact" className="py-2 hover:text-teal-400/90">
-                        Contact
-                    </a>
                     <a href="#faq" className="py-2 hover:text-teal-400/90">
                         FAQ
+                    </a>
+                    <a href="#org-com" className="py-2 hover:text-teal-400/90">
+                        Organizing Committee
+                    </a>
+                    <a href="#contact" className="py-2 hover:text-teal-400/90">
+                        Contact & Socials
                     </a>
                 </div>
             </nav>

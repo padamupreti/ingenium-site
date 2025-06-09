@@ -5,7 +5,7 @@ function Hero() {
     return (
         <section
             id="register"
-            className="text-white flex flex-col justify-evenly items-start mx-6 xs:mx-8 sm:mx-10 md:items-baseline md:flex-row relative"
+            className="bg-gray-950/60 text-white flex flex-col justify-evenly items-start px-6 xs:px-8 sm:px-10 md:items-baseline md:flex-row relative"
         >
             <HeroAction />
             <HeroTimers />

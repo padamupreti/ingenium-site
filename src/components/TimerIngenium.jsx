@@ -20,13 +20,13 @@ function TimerIngenium() {
                     </span>
                 </div>
                 <div className="font-medium text-center flex flex-col space-y-1">
-                    <span className="text-3xl xs:text-5xl lg:text-6xl">30</span>
+                    <span className="text-3xl xs:text-5xl lg:text-6xl">09</span>
                     <span className="text-teal-400/90 text-xs sm:text-sm uppercase">
                         Hours
                     </span>
                 </div>
                 <div className="font-medium text-center flex flex-col space-y-1">
-                    <span className="text-3xl xs:text-5xl lg:text-6xl">46</span>
+                    <span className="text-3xl xs:text-5xl lg:text-6xl">35</span>
                     <span className="text-teal-400/90 text-xs sm:text-sm uppercase">
                         Minutes
                     </span>

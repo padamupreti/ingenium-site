@@ -9,6 +9,7 @@ import Events from "../components/Events"
 import Contact from "../components/Contact"
 import Container from "../components/Container"
 import ParticlesCom from "../components/ParticlesCom"
+import BtnScrollTop from "../components/BtnScrollTop"
 
 const interFont = Inter({ subsets: ["latin"] })
 
@@ -30,6 +31,7 @@ export default function Home({ faqData, eventsData }) {
                     <FAQ faqData={faqData} />
                 </Container>
                 <Contact />
+                <BtnScrollTop />
             </div>
         </>
     )

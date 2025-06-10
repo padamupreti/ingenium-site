@@ -36,7 +36,7 @@ function FAQ() {
         {
             question:
                 "What is the difference between CodeSprint Hackathon and TechX Innovation Fair?",
-            answer: "The hackathon is time-bound with given theme whereas innovation fair entails exhibition/showcase of pre-developed projects. The hackathon will occur on June 30 and July 01. The innovation fair will occur on main event day (July 03).",
+            answer: "The hackathon is time-bound with given theme whereas innovation fair entails exhibition/showcase of pre-developed projects. The hackathon will occur on July 01. The innovation fair will occur on main event day (July 03).",
         },
         {
             question:

@@ -105,7 +105,7 @@ function Events() {
                 <div className="border-2 border-teal-400/80 rounded-xl pb-5 px-1 md:px-3">
                     <div className="px-2 py-5 flex flex-col items-start md:flex-row gap-3">
                         <div className="bg-teal-400 text-gray-950 p-2 rounded-2xl text-sm uppercase">
-                            Starts early on june 30
+                            Starts early on july 01
                         </div>
                         <span className="bg-cyan-500 text-gray-950 p-2 rounded-2xl text-sm uppercase">
                             Registered Teams: 0/15
@@ -134,8 +134,8 @@ function Events() {
                                 at the start of event.
                             </p>
                             <p className="font-bold">
-                                Please note that this event starts early on June
-                                30, before the main event date on July 03. Also,
+                                Please note that this event starts early on July
+                                01, before the main event date on July 03. Also,
                                 the no. of teams that can register is limited to
                                 15.
                             </p>

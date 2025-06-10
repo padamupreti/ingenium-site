@@ -1,12 +1,12 @@
 import {
     FaEnvelope,
-    FaFacebook,
     FaInstagram,
     FaLocationDot,
     FaPhone,
     FaRegCopyright,
 } from "react-icons/fa6"
-import ingeniumLogo from "../assets/ingenium.png"
+import Link from "next/link"
+import Image from "next/image"
 
 function Contact() {
     return (
@@ -14,18 +14,20 @@ function Contact() {
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div className="flex flex-col space-y-2.5 md:w-fit md:mx-auto">
                     <div className="h-14">
-                        <a href=".">
-                            <img
-                                src={ingeniumLogo}
-                                alt="Ingenium Logo"
-                                className="h-full w-auto"
-                            />
-                        </a>
+                        <Image
+                            src={"/ingenium.png"}
+                            alt="Ingenium Logo"
+                            width={625}
+                            height={134}
+                            unoptimized
+                            priority
+                            className="h-full w-auto"
+                        />
                     </div>
                     <h2 className="mt-4 text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
                         Find Us On
                     </h2>
-                    <a
+                    <Link
                         href="https://www.instagram.com/necingenium2025/"
                         target="_blank"
                         className="text-white hover:text-teal-400/90"
@@ -34,7 +36,7 @@ function Contact() {
                             <FaInstagram />
                             <span>Instagram</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="md:w-fit md:mx-auto">
                     <h2 className="text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
@@ -51,27 +53,25 @@ function Contact() {
                         <div className="flex flex-col space-y-2.5">
                             <p className="flex items-center space-x-2">
                                 <FaLocationDot />
-                                <a href="https://maps.app.goo.gl/6ZhyV4KBDBC6sC7UA">
-                                    Changunarayan, Bhaktapur
-                                </a>
+                                <span>Changunarayan, Bhaktapur</span>
                             </p>
                             <p className="flex items-center space-x-2">
                                 <FaPhone />
-                                <a
+                                <Link
                                     href="tel:9844686688"
                                     className="text-teal-400/90"
                                 >
                                     9844686688
-                                </a>
+                                </Link>
                             </p>
                             <p className="flex items-center space-x-2">
                                 <FaEnvelope />
-                                <a
+                                <Link
                                     href="mailto:ingenium@nec.edu.np"
                                     className="text-teal-400/90"
                                 >
                                     ingenium@nec.edu.np
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </div>

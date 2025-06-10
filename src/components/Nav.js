@@ -1,6 +1,10 @@
+import Link from "next/link"
 import { useState } from "react"
 import { FaX } from "react-icons/fa6"
 import { FaBars } from "react-icons/fa"
+import { Roboto_Slab } from "next/font/google"
+
+const fontRobotoSlab = Roboto_Slab({ subsets: ["latin"] })
 
 function Nav() {
     const [openMenu, setOpenMenu] = useState(false)
@@ -58,13 +62,15 @@ function Nav() {
                 >
                     {openMenu ? <FaX /> : <FaBars />}
                 </button>
-                <h1 className="text-xl md:text-2xl w-11/12 md:w-4/12 text-center font-bold font-robotoslab">
-                    <a href=".">
+                <h1
+                    className={`text-xl md:text-2xl w-11/12 md:w-4/12 text-center font-bold ${fontRobotoSlab.className}`}
+                >
+                    <Link href="/">
                         <span className="text-[#00adef] italic font-extrabold">
                             nec{" "}
                         </span>
                         <span className="text-teal-400/90">Ingenium</span>
-                    </a>
+                    </Link>
                 </h1>
                 <div className="hidden md:flex justify-evenly w-8/12">
                     <a href="#about" className="py-2 hover:text-teal-400/90">

@@ -1,8 +1,18 @@
+import Link from "next/link"
+import Image from "next/image"
 import { HiArrowUpRight } from "react-icons/hi2"
 import { MdKeyboardDoubleArrowUp } from "react-icons/md"
 
 function EventCard({ event }) {
-    const { name, categories, description, docLink, imgSrc } = event
+    const {
+        name,
+        categories,
+        description,
+        docLink,
+        imgSrc,
+        imgWidth,
+        imgHeight,
+    } = event
 
     return (
         <div className="flex flex-col gap-6 md:flex-row items-center bg-slate-100/10 backdrop-blur-xs p-2 xs:p-3 md:px-4 md:py-5 border border-white/10 rounded-xl">
@@ -24,7 +34,7 @@ function EventCard({ event }) {
                 </div>
                 <p>{description}</p>
                 <div className="flex space-x-2">
-                    <a
+                    <Link
                         href={docLink}
                         target="_blank"
                         className="bg-cyan-500 text-gray-950 p-2 rounded-lg w-1/2 text-center"
@@ -33,7 +43,7 @@ function EventCard({ event }) {
                             <span>Details</span>
                             <HiArrowUpRight />
                         </div>
-                    </a>
+                    </Link>
                     <a
                         href="#register"
                         className="bg-teal-400/90 text-gray-950 p-2 rounded-lg w-1/2 text-center"
@@ -46,9 +56,12 @@ function EventCard({ event }) {
                 </div>
             </div>
             <div className="md:w-1/2">
-                <img
+                <Image
                     src={imgSrc}
                     alt="Event Picture"
+                    width={imgWidth}
+                    height={imgHeight}
+                    unoptimized
                     className="rounded-xl md:w-11/12 md:mx-auto lg:w-10/12"
                 />
             </div>

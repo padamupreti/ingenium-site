@@ -13,16 +13,16 @@ function ParticlesCom() {
         })
     }, [])
 
-    const particlesLoaded = (container) => {
-        console.log(container)
-    }
+    // const particlesLoaded = (container) => {
+    //     console.log(container)
+    // }
 
     return (
         <>
             {init && (
                 <Particles
                     id="tsparticles"
-                    particlesLoaded={particlesLoaded}
+                    // particlesLoaded={particlesLoaded}
                     options={{
                         fullScreen: {
                             zIndex: -1,

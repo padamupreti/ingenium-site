@@ -1,4 +1,4 @@
-import visitors from "../assets/visitors.jpg"
+import Image from "next/image"
 
 function About() {
     return (
@@ -28,14 +28,18 @@ function About() {
                     At present there are 2000+ students pursuing undergraduate
                     and graduate degrees in engineering and architecture.{" "}
                     <span className="font-extrabold italic">nec</span> is
-                    committed to retaining its long earned reputation of "an
-                    institution with concerns for quality and academic freedom".{" "}
+                    committed to retaining its long earned reputation of
+                    &quot;an institution with concerns for quality and academic
+                    freedom&quot;.
                 </p>
             </div>
             <div className="md:w-1/2">
-                <img
-                    src={visitors}
+                <Image
+                    src={"/visitors.jpg"}
                     alt="Ingenium Visitors"
+                    width={1080}
+                    height={607}
+                    unoptimized
                     className="rounded-xl md:w-11/12 md:mx-auto lg:w-10/12"
                 />
             </div>

@@ -10,7 +10,10 @@ import Image from "next/image"
 
 function Contact() {
     return (
-        <section id="contact" className="mt-8 md:mt-10 bg-gray-900 p-5">
+        <footer
+            id="contact"
+            className="mt-8 md:mt-10 bg-gray-900 pt-5 px-5 pb-16"
+        >
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div className="flex flex-col space-y-2.5 md:w-fit md:mx-auto">
                     <div className="h-14">
@@ -77,11 +80,24 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <p className="mt-8 text-xs md:text-sm text-center text-gray-400/80">
-                <FaRegCopyright className="inline-block" /> 2025 Nepal
-                Engineering College. All Rights Reserved.
-            </p>
-        </section>
+            <div class="mt-8 text-gray-400/80 text-center">
+                <p className="text-xs md:text-sm">
+                    <FaRegCopyright className="inline-block" /> 2025 Nepal
+                    Engineering College. All Rights Reserved.
+                </p>
+                <p className="mt-2 text-xs md:text-sm">
+                    Designed by{" "}
+                    <Link
+                        href="https://padamupreti.com.np/"
+                        target="_blank"
+                        className="underline"
+                    >
+                        Padam Upreti
+                    </Link>{" "}
+                    (BE Computer 020-365)
+                </p>
+            </div>
+        </footer>
     )
 }
 

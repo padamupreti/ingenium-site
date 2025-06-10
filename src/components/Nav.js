@@ -39,13 +39,6 @@ function Nav() {
                     FAQ
                 </a>
                 <a
-                    href="#org-com"
-                    className="py-2 hover:text-teal-400/90"
-                    onClick={toggleMenu}
-                >
-                    Organizing Committee
-                </a>
-                <a
                     href="#contact"
                     className="py-2 hover:text-teal-400/90"
                     onClick={toggleMenu}
@@ -81,9 +74,6 @@ function Nav() {
                     </a>
                     <a href="#faq" className="py-2 hover:text-teal-400/90">
                         FAQ
-                    </a>
-                    <a href="#org-com" className="py-2 hover:text-teal-400/90">
-                        Organizing Committee
                     </a>
                     <a href="#contact" className="py-2 hover:text-teal-400/90">
                         Contact & Socials

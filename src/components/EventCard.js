@@ -3,6 +3,8 @@ import Image from "next/image"
 import { HiArrowUpRight } from "react-icons/hi2"
 import { MdKeyboardDoubleArrowUp } from "react-icons/md"
 
+import OrgCard from "./OrgCard"
+
 function EventCard({ event }) {
     const {
         name,
@@ -12,6 +14,8 @@ function EventCard({ event }) {
         imgSrc,
         imgWidth,
         imgHeight,
+        member,
+        profMember,
     } = event
 
     return (
@@ -33,6 +37,10 @@ function EventCard({ event }) {
                     </div>
                 </div>
                 <p>{description}</p>
+                <div className="flex flex-col gap-5 lg:flex-row lg:gap-10">
+                    <OrgCard member={member} />
+                    {profMember && <OrgCard member={profMember} />}
+                </div>
                 <div className="flex space-x-2">
                     <Link
                         href={docLink}

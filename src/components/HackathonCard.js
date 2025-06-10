@@ -4,10 +4,17 @@ import { useEffect, useState } from "react"
 import { HiArrowUpRight } from "react-icons/hi2"
 import { MdKeyboardDoubleArrowUp } from "react-icons/md"
 
+import OrgCard from "./OrgCard"
+
 function HackathonCard() {
     const [total, setTotal] = useState(15)
     const [registered, setRegistered] = useState(0)
-    const hckCategories = ["Undergraduate", "CMP", "ELE & ELX"]
+    const hckCategories = ["Undergraduate"]
+    const member = { name: "Aditya Malla Thakuri", tel: "9860687209" }
+    const profMember = {
+        name: "Asst. Prof. Prem Bahadur KC",
+        tel: "9813606028",
+    }
 
     useEffect(() => {
         fetch("/hackathon.json")
@@ -61,6 +68,10 @@ function HackathonCard() {
                         before the main event date on July 03. Also, the no. of
                         teams that can register is limited to {total}.
                     </p>
+                    <div className="flex flex-col gap-5 lg:flex-row lg:gap-10">
+                        <OrgCard member={member} />
+                        <OrgCard member={profMember} />
+                    </div>
                     <div className="flex space-x-2">
                         <Link
                             href={"/docs/codesprint-hackathon.pdf"}

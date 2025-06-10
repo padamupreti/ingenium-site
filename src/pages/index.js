@@ -6,14 +6,13 @@ import FAQ from "../components/FAQ"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Events from "../components/Events"
-import OrgCom from "../components/OrgCom"
 import Contact from "../components/Contact"
 import Container from "../components/Container"
 import ParticlesCom from "../components/ParticlesCom"
 
 const interFont = Inter({ subsets: ["latin"] })
 
-export default function Home({ faqData, eventsData, orgMembersData }) {
+export default function Home({ faqData, eventsData }) {
     return (
         <>
             <Head>
@@ -29,7 +28,6 @@ export default function Home({ faqData, eventsData, orgMembersData }) {
                     <About />
                     <Events eventsData={eventsData} />
                     <FAQ faqData={faqData} />
-                    <OrgCom orgMembersData={orgMembersData} />
                 </Container>
                 <Contact />
             </div>
@@ -48,46 +46,68 @@ export async function getStaticProps() {
             imgSrc: "/oneworld.jpg",
             imgWidth: 1280,
             imgHeight: 720,
+            member: { name: "MD Niyaj Ali", tel: "9702236740" },
+            profMember: null,
         },
         {
             name: "Innovative Infrastructure Challenge",
-            categories: ["Undergraduate", "Civil", "Architecture"],
+            categories: ["Undergraduate"],
             description:
                 "Design sustainable and inclusive infrastructure under specified themes. Requires physical models or CAD designs and posters.",
             docLink: "/docs/innovative-infrastructure.pdf",
             imgSrc: "/infra.webp",
             imgWidth: 445,
             imgHeight: 250,
+            member: { name: "Rohan Shrestha", tel: "9840900052" },
+            profMember: {
+                name: "Asst. Prof. Binay Kumar Sah",
+                tel: "9804844344",
+            },
         },
         {
             name: "Design & Build: Miniature Masterplan Challenge",
-            categories: ["Undergraduate", "Architecture", "Civil"],
+            categories: ["Undergraduate"],
             description:
                 "Create physical or 3D-printed models as solutions to real world infrastructure problems. Requires concept sheet with specified sections in addition.",
             docLink: "/docs/miniature-masterplan.pdf",
             imgSrc: "/miniature.png",
             imgWidth: 1000,
             imgHeight: 562,
+            member: { name: "Gagan Simkhada", tel: "9866894004" },
+            profMember: {
+                name: "Asst. Prof. Rajiv Manandhar",
+                tel: "9841493659",
+            },
         },
         {
             name: "BotArena: Robotics Innovation Show",
-            categories: ["Undergraduate", "ELE & ELX", "CMP"],
+            categories: ["Undergraduate"],
             description:
                 "Robotics competition to test programming and design skills. Requires participants' own kits with dimension and weight limits.",
             docLink: "/docs/botarena-robotics.pdf",
-            imgSrc: "/robosoccer.jpg",
-            imgWidth: 2048,
-            imgHeight: 1152,
+            imgSrc: "/botarena.jpg",
+            imgWidth: 1280,
+            imgHeight: 720,
+            member: { name: "Utsav Gautam", tel: "9748433357" },
+            profMember: {
+                name: "Asst. Prof. Deepesh Prakash Guragain",
+                tel: "9841113139",
+            },
         },
         {
             name: "TechX Innovation Fair",
-            categories: ["Undergraduate", "CMP", "ELE & ELX"],
+            categories: ["Undergraduate"],
             description:
                 "Create software and hardware systems to solve problems under specified themes. Requires poster summarizing specified sections.",
             docLink: "/docs/techx-innovation.pdf",
             imgSrc: "/techx.webp",
             imgWidth: 549,
             imgHeight: 308,
+            member: { name: "Sujan Poudel", tel: "9845993344" },
+            profMember: {
+                name: "Asst. Prof. Basanta Pancha",
+                tel: "9843500887",
+            },
         },
         {
             name: "Poster Design Competition",
@@ -98,6 +118,11 @@ export async function getStaticProps() {
             imgSrc: "/poster.jpg",
             imgWidth: 800,
             imgHeight: 450,
+            member: { name: "Rohan Shrestha", tel: "9840900052" },
+            profMember: {
+                name: "Asst. Prof. Rakshya Raimajhi",
+                tel: "9813824243",
+            },
         },
         {
             name: "Open Science Project Competition",
@@ -108,6 +133,11 @@ export async function getStaticProps() {
             imgSrc: "/openscience.jpg",
             imgWidth: 800,
             imgHeight: 450,
+            member: { name: "Gagan Simkhada", tel: "9866894004" },
+            profMember: {
+                name: "Asst. Prof. Kishor Dhungana",
+                tel: "9851149161",
+            },
         },
         {
             name: "Short Video Challenge: Engineer The Future",
@@ -118,51 +148,18 @@ export async function getStaticProps() {
             imgSrc: "/shortvideo.jpg",
             imgWidth: 1280,
             imgHeight: 720,
-        },
-    ]
-
-    const orgMembersData = [
-        {
-            name: "Asst. Prof. Bishwadeep Mainaly",
-            tel: "9844686688",
-            mail: "bishwadeepm@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Deepesh Prakash Guragain",
-            tel: "9841750242",
-            mail: "deepeshpg@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Binay Kumar Sah",
-            tel: "9843392148",
-            mail: "binayks@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Rakshya Raimajhi",
-            tel: "9851223699",
-            mail: "rakshyar@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Kishor Dhungana",
-            tel: "9851169526",
-            mail: "kishord@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Rajiv Manandhar",
-            tel: "9851242390",
-            mail: "rajivm@nec.edu.np",
-        },
-        {
-            name: "Asst. Prof. Basanta Pancha",
-            tel: "9843500887",
-            mail: "basantap@nec.edu.np",
+            member: { name: "Sulav Timilshina", tel: "9840052821" },
+            profMember: {
+                name: "Asst. Prof. Bishwadeep Mainaly",
+                tel: "9844686688",
+            },
         },
     ]
 
     const faqData = [
         {
             question: "Who can participate in nec Ingenium 2025?",
-            answer: "Currently enrolled students from +2 and undergraduate levels can participate. Open Science Project and Short Video Challenge are +2 level only whereas the rest of the events are for undergraduate students from any program.",
+            answer: "Currently enrolled students from undergraduate, diploma and +2 levels can participate. Open Science Project and Short Video Challenge are +2 level only whereas the rest of the events are for undergraduate students from any program.",
         },
         {
             question: "Is there a registration fee?",
@@ -184,7 +181,6 @@ export async function getStaticProps() {
         props: {
             faqData,
             eventsData,
-            orgMembersData,
         },
     }
 }

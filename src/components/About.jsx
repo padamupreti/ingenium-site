@@ -4,7 +4,7 @@ function About() {
     return (
         <section
             id="about"
-            className="mt-4 flex flex-col gap-8 md:flex-row items-center"
+            className="mt-8 md:mt-10 flex flex-col gap-8 md:flex-row items-center"
         >
             <div className="md:w-1/2">
                 <h2 className="text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">

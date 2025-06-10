@@ -49,7 +49,7 @@ function Nav() {
                     Contact & Socials
                 </a>
             </nav>
-            <nav className="h-16 px-4 border-b border-b-gray-700 bg-gray-950/60 text-white flex items-center justify-center md:justify-between relative z-20">
+            <nav className="h-16 px-4 border-b border-b-gray-700 bg-gray-950/60 text-white flex items-center justify-start md:justify-around relative z-20">
                 <div className="absolute -z-10 h-12 w-12 rounded-full bg-teal-200/90 blur-2xl pointer-events-none top-1 left-2"></div>
                 <div className="absolute -z-10 h-12 w-12 rounded-full bg-teal-400/80 blur-2xl pointer-events-none top-1 right-1/3 md:right-2/3"></div>
                 <button
@@ -60,7 +60,9 @@ function Nav() {
                 </button>
                 <h1 className="text-xl md:text-2xl w-11/12 md:w-4/12 text-center font-bold font-robotoslab">
                     <a href=".">
-                        <span className="italic font-extrabold">nec </span>
+                        <span className="text-[#00adef] italic font-extrabold">
+                            nec{" "}
+                        </span>
                         <span className="text-teal-400/90">Ingenium</span>
                     </a>
                 </h1>

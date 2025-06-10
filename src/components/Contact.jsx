@@ -6,46 +6,31 @@ import {
     FaPhone,
     FaRegCopyright,
 } from "react-icons/fa6"
+import ingeniumLogo from "../assets/ingenium.png"
 
 function Contact() {
     return (
         <section id="contact" className="mt-8 md:mt-10 bg-gray-900 p-5">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div className="flex flex-col space-y-2.5 md:w-fit md:mx-auto">
-                    <h2 className="font-robotoslab font-bold text-3xl md:text-4xl lg:text-5xl leading-10 md:leading-12 lg:leading-16">
-                        <span className="text-white font-extrabold italic">
-                            nec
-                        </span>{" "}
-                        <span className="bg-gradient-to-r from-indigo-500 via-teal-500 to-emerald-500 bg-clip-text text-transparent">
-                            Ingenium
-                        </span>
-                    </h2>
-                    <span className="text-white flex gap-1 uppercase text-xs xs:text-sm">
-                        <span>Code</span>
-                        <span>·</span>
-                        <span>Create</span>
-                        <span>·</span>
-                        <span>Elevate</span>
-                    </span>
+                    <div className="h-14">
+                        <a href=".">
+                            <img
+                                src={ingeniumLogo}
+                                alt="Ingenium Logo"
+                                className="h-full w-auto"
+                            />
+                        </a>
+                    </div>
                     <h2 className="mt-4 text-teal-400/90 text-2xl md:text-3xl lg:text-4xl font-bold">
                         Find Us On
                     </h2>
                     <a
-                        href="#"
+                        href="https://www.instagram.com/necingenium2025/"
                         target="_blank"
                         className="text-white hover:text-teal-400/90"
                     >
-                        <span className="flex items-center space-x-2 text-lg md:text-xl">
-                            <FaFacebook />
-                            <span>Facebook</span>
-                        </span>
-                    </a>
-                    <a
-                        href="#"
-                        target="_blank"
-                        className="text-white hover:text-teal-400/90"
-                    >
-                        <span className="flex items-center space-x-2 text-lg md:text-xl">
+                        <span className="flex items-center space-x-2 md:text-lg">
                             <FaInstagram />
                             <span>Instagram</span>
                         </span>

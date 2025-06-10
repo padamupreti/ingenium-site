@@ -111,7 +111,7 @@ function Events() {
                             Registered Teams: 0/15
                         </span>
                     </div>
-                    <div className="flex flex-col gap-6 md:flex-row items-center bg-slate-100/5 backdrop-blur-xs p-2 xs:p-3 md:px-4 md:py-5 rounded-xl">
+                    <div className="flex flex-col gap-6 md:flex-row items-center bg-slate-100/10 backdrop-blur-xs p-2 xs:p-3 md:px-4 md:py-5 rounded-xl">
                         <div className="flex flex-col space-y-5 md:w-1/2">
                             <div>
                                 <h3 className="text-teal-400/90 text-lg md:text-xl font-bold">

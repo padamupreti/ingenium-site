@@ -11,7 +11,7 @@ import ParticlesCom from "./components/ParticlesCom"
 function App() {
     return (
         <>
-            <div className="bg-gray-950 text-gray-400 font-inter relative z-20">
+            <div className="bg-gray-950 text-gray-400 font-inter relative z-20 overflow-x-hidden">
                 <Nav />
                 <Hero />
                 <Container>
